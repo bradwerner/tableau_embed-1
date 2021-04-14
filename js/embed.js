@@ -4,8 +4,9 @@ var viz, sheet, workbook; //we need this to be semi-global so we can reference i
     function initViz()
     {
         var containerDiv = document.getElementById("vizContainer"),
-            
-            url = "https://demo.tableau.com/t/BaileyFerrari/views/NewInnovationsDashboardDemo/RotationScheduling?:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link", //Change to URL for View required. 
+    //to get the right URL, upload to Tableau online and reaplace everything from :show in the URL with
+    //showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link&:isGuestRedirectFromVizportal=y&:embed=y
+            url = "https://prod-useast-a.online.tableau.com/t/godatadrive/views/SupplyChainCaseStudy/SupplyChainInsights?:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link&:isGuestRedirectFromVizportal=y&:embed=y#3", //Change to URL for View required. 
             options =
             {
                 height: "775px",
