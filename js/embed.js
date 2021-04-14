@@ -5,12 +5,12 @@ var viz, sheet, workbook; //we need this to be semi-global so we can reference i
     {
         var containerDiv = document.getElementById("vizContainer"),
     //to get the right URL, upload to Tableau online and reaplace everything from :show in the URL with
-    //showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link&:isGuestRedirectFromVizportal=y&:embed=y
-            url = "https://prod-useast-a.online.tableau.com/t/godatadrive/views/SupplyChainCaseStudy/SupplyChainInsights?:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link&:isGuestRedirectFromVizportal=y&:embed=y#3", //Change to URL for View required. 
+      //showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link&:isGuestRedirectFromVizportal=y&:embed=y
+            url = "https://prod-useast-a.online.tableau.com/t/godatadrive/views/SupplyChainCaseStudy/SupplyChainInsights?:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link&:isGuestRedirectFromVizportal=y&:embed=y#3", //Change to URL for View required.
             options =
             {
-                height: "775px",
-                width: "1650px",
+                height: "800px",
+                width: "1200px",
                 hideTabs: true,
                 hideToolbar: true,
                 onFirstInteractive: function () //this function fires only once when the viz is first time rendered - think of it as init function
